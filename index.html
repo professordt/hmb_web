@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamboning Media - Creative Chaos with Style</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">Hamboning Media</span>
+                </a>
+            </div>
+            
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            
+            <nav class="primary-navigation" id="primary-navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="shop.html" class="nav-link nav-cta">Visit Shop</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title animated-bounce">Welcome to Hamboning Media</h1>
+                <p class="hero-subtitle">Unleashing Creative Chaos Since Yesterday</p>
+                <a href="portfolio.html" class="hero-cta">Explore the Madness</a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services">
+            <div class="container">
+                <h2 class="section-title">What We Do</h2>
+                
+                <div class="service-grid">
+                    <!-- Video Service -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" width="64" height="64">
+                                <path d="M4 8H2v12a2 2 0 0 0 2 2h12v-2H4z" fill="currentColor"/>
+                                <path d="M20 2H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm-9 12V6l7 4z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Video Production</h3>
+                        <p class="service-description">From concept to final cut, we create videos that captivate, entertain, and inspire action. Our team blends storytelling with visual flair that makes your audience hit that replay button.</p>
+                        <a href="portfolio.html#video" class="service-link">See our work</a>
+                    </div>
+                    
+                    <!-- AI Service -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" width="64" height="64">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="currentColor"/>
+                                <path d="M15.5 4A6.5 6.5 0 0 0 9 10.5c0 1.61.59 3.09 1.58 4.23L12 13.32l6.98-6.98A6.508 6.508 0 0 0 15.5 4zm0-2C20.19 2 24 5.81 24 10.5c0 2.02-.77 3.94-2.16 5.4L15.5 22.25 8.16 15.9A8.31 8.31 0 0 1 6 10.5C6 5.81 9.81 2 14.5 2z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">AI & Machine Learning</h3>
+                        <p class="service-description">We leverage cutting-edge AI to create interactive experiences that respond, learn, and evolve. From chatbots with personality to predictive systems that anticipate user needs.</p>
+                        <a href="portfolio.html#ai" class="service-link">Explore AI projects</a>
+                    </div>
+                    
+                    <!-- AR/VR Service -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" width="64" height="64">
+                                <path d="M20.74 4.93c-1.86-1.76-4.23-2.6-6.74-2.93v.02H10c-2.51.33-4.88 1.16-6.74 2.93-1.17 1.11-1.94 2.62-1.94 4.46v.68c.03 2.29 1 4.03 1.94 5.05 1.86 2.05 4.23 3.11 6.74 3.45v-.02h4c2.51-.33 4.88-1.4 6.74-3.45.94-1.02 1.91-2.76 1.94-5.05v-.68c0-1.84-.77-3.35-1.94-4.46zM9 4h6c1.66.24 3.95 1.07 5 2.05v1.95l-4.82 2.73c-.4-1.04-1.18-1.82-2.18-2.22v-1.6c0-.41-.34-.75-.75-.75s-.75.34-.75.75v1.6c-1 .4-1.78 1.18-2.18 2.22L4.5 7.95V6.05C5.55 5.07 7.34 4.24 9 4zm6.82 9.01L18 11.11v.89c-.04 1.86-.88 3.29-1.46 3.91-1.5 1.6-3.92 2.75-5.54 2.92V15.5c0-.41-.34-.75-.75-.75s-.75.34-.75.75v3.34c-1.66-.17-4.03-1.33-5.54-2.92-.59-.62-1.43-2.05-1.46-3.91v-.89l3.68 2.07c.28 1.11 1.28 1.81 2.32 1.81h.5c1.04 0 2.04-.7 2.32-1.81zm-5.57.36c-.29 0-.63-.2-.74-.58-.17-.52.12-1.07.64-1.24l.23-.07c.52-.17 1.07.12 1.24.64.17.52-.12 1.07-.64 1.24l-.23.07c-.1.03-.21.04-.31.04z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">AR/VR Experiences</h3>
+                        <p class="service-description">Step beyond reality with our immersive AR and VR experiences. We build digital worlds that blur the line between imagination and reality, creating memorable branded moments.</p>
+                        <a href="portfolio.html#arvr" class="service-link">Enter virtual worlds</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <div class="spoon-icon"></div>
+                </div>
+                <p class="footer-tagline">Creative Chaos with Spoons and Style</p>
+            </div>
+            
+            <div class="footer-contact">
+                <h3>Connect With Us</h3>
+                <a href="mailto:hello@hamboningmedia.com" class="footer-email">hello@hamboningmedia.com</a>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" class="social-icon">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" class="social-icon">
+                            <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" class="social-icon">
+                            <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2025 Hamboning Media. All rights spoons.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for navigation and animations -->
+    <script>
+        // Mobile navigation toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            const navToggle = document.querySelector('.mobile-nav-toggle');
+            const primaryNav = document.querySelector('.primary-navigation');
+            
+            if (navToggle && primaryNav) {
+                navToggle.addEventListener('click', () => {
+                    const isVisible = primaryNav.getAttribute('data-visible') === 'true';
+                    primaryNav.setAttribute('data-visible', !isVisible);
+                    navToggle.setAttribute('aria-expanded', !isVisible);
+                });
+            }
+            
+            // Sticky header effect on scroll
+            let lastScrollTop = 0;
+            const header = document.querySelector('.site-header');
+            
+            window.addEventListener('scroll', () => {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                
+                if (scrollTop > lastScrollTop && scrollTop > 100) {
+                    // Scrolling down & past the header height
+                    header.style.transform = 'translateY(-100%)';
+                } else {
+                    // Scrolling up
+                    header.style.transform = 'translateY(0)';
+                    
+                    if (scrollTop > 50) {
+                        header.classList.add('header-scrolled');
+                    } else {
+                        header.classList.remove('header-scrolled');
+                    }
+                }
+                
+                lastScrollTop = scrollTop;
+            });
+        });
+    </script>
+</body>
+</html>
+
