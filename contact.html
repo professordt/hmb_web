@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Hamboning Media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Hamboning Media</a>
+            </div>
+            
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            
+            <nav class="primary-navigation" id="primary-navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                    <li><a href="shop.html" class="nav-link nav-cta">Visit Shop</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Contact Hero Section -->
+        <section class="contact-hero">
+            <div class="container">
+                <h1 class="page-title">Get in Touch</h1>
+                <p class="page-subtitle">Have a project in mind? Let's cook something up together!</p>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h2>Let's Connect</h2>
+                        <p>We're always looking for new opportunities to collaborate, create, and cause a little creative chaos. Whether you have a specific project in mind or just want to say hello, we'd love to hear from you!</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="icon-wrapper">
+                                    <img src="https://placehold.co/20x20/ff9900/ffffff?text=S" alt="" class="icon" aria-hidden="true">
+                                </div>
+                                <h3>Email Us</h3>
+                                <a href="mailto:hello@hamboningmedia.com">hello@hamboningmedia.com</a>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="icon-wrapper">
+                                    <img src="https://placehold.co/20x20/ff9900/ffffff?text=S" alt="" class="icon" aria-hidden="true">
+                                </div>
+                                <h3>Location</h3>
+                                <p>Digital Spoonverse, Creativity Lane</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contact-form">
+                            <h2>Send Us a Message</h2>
+                            
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <div class="input-wrapper">
+                                    <input type="text" id="name" name="name" required>
+                                    <img src="https://placehold.co/20x20/0066ff/ffffff?text=S" alt="" class="input-icon" aria-hidden="true">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <div class="input-wrapper">
+                                    <input type="email" id="email" name="email" required>
+                                    <img src="https://placehold.co/20x20/ff9900/ffffff?text=S" alt="" class="input-icon" aria-hidden="true">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <div class="input-wrapper">
+                                    <textarea id="message" name="message" rows="5" required></textarea>
+                                    <img src="https://placehold.co/20x20/0066ff/ffffff?text=S" alt="" class="input-icon textarea-icon" aria-hidden="true">
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="submit-button">
+                                <span>Send Message</span>
+                                <img src="https://placehold.co/20x20/ffffff/ffffff?text=S" alt="" class="button-icon" aria-hidden="true">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-brand">
+                <p class="footer-tagline">Creative Chaos with Spoons and Style</p>
+            </div>
+            
+            <div class="footer-contact">
+                <h3>Connect With Us</h3>
+                <a href="mailto:hello@hamboningmedia.com" class="footer-email">hello@hamboningmedia.com</a>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Instagram">Instagram</a>
+                    <a href="#" class="social-link" aria-label="YouTube">YouTube</a>
+                    <a href="#" class="social-link" aria-label="Twitter">Twitter</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Hamboning Media. All rights spoons.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Simple form submission
+            const form = document.getElementById('contact-form');
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thanks for your message! We would normally send this to our server.');
+                form.reset();
+            });
+        });
+    </script>
+</body>
+</html>
