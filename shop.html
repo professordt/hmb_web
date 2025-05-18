@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Hamboning Media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Hamboning Media</a>
+            </div>
+            
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            
+            <nav class="primary-navigation" id="primary-navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="shop.html" class="nav-link active nav-cta">Visit Shop</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Shop Hero Section -->
+        <section class="shop-hero">
+            <div class="container">
+                <h1 class="shop-title">Need to Buy Some Hamboning?</h1>
+                <div class="shop-cta-container">
+                    <a href="https://example.com/spoon-shop" class="shop-cta-button" target="_blank" rel="noopener">
+                        Take Me to the Spoons
+                        <span class="shop-cta-icon" aria-hidden="true">🥄</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Merch Preview Section -->
+        <section class="merch-preview">
+            <div class="container">
+                <div class="merch-grid">
+                    <div class="merch-item">
+                        <div class="merch-image">
+                            <img src="https://placehold.co/600x600/ff9900/1e1e1e?text=Hamboning+Tee" alt="Hamboning T-shirt preview">
+                        </div>
+                        <div class="merch-info">
+                            <h3>The Classic Spoonster</h3>
+                            <p>Our flagship tee for the rhythmically chaotic</p>
+                        </div>
+                    </div>
+                    
+                    <div class="merch-testimonial">
+                        <div class="testimonial-content">
+                            <p>"I was just a regular person before I discovered Hamboning merch. Now I'm still regular, but with way cooler stuff."</p>
+                            <cite>— Someone with excellent taste</cite>
+                        </div>
+                    </div>
+                    
+                    <div class="merch-item">
+                        <div class="merch-image">
+                            <img src="https://placehold.co/600x600/0066ff/fefaf2?text=Digital+Spoon" alt="Digital art preview">
+                        </div>
+                        <div class="merch-info">
+                            <h3>Digital Collectibles</h3>
+                            <p>Limited edition digital art for the discerning spoon enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="merch-note">
+                    <p>Our external shop contains physical and digital goods for all your Hamboning needs. Click the button above to explore the full collection!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-brand">
+                <p class="footer-tagline">Creative Chaos with Spoons and Style</p>
+            </div>
+            
+            <div class="footer-contact">
+                <h3>Connect With Us</h3>
+                <a href="mailto:hello@hamboningmedia.com" class="footer-email">hello@hamboningmedia.com</a>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Instagram">Instagram</a>
+                    <a href="#" class="social-link" aria-label="YouTube">YouTube</a>
+                    <a href="#" class="social-link" aria-label="Twitter">Twitter</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Hamboning Media. All rights spoons.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile navigation toggle
+            const navToggle = document.querySelector('.mobile-nav-toggle');
+            const primaryNav = document.querySelector('.primary-navigation');
+            
+            if (navToggle && primaryNav) {
+                navToggle.addEventListener('click', function() {
+                    const isVisible = primaryNav.getAttribute('data-visible') === 'true';
+                    primaryNav.setAttribute('data-visible', !isVisible);
+                    navToggle.setAttribute('aria-expanded', !isVisible);
+                });
+            }
+            
+            // Add some fun animation to the CTA
+            const cta = document.querySelector('.shop-cta-button');
+            if (cta && window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+                cta.addEventListener('mouseover', function() {
+                    this.classList.add('wiggle');
+                });
+                
+                cta.addEventListener('animationend', function() {
+                    this.classList.remove('wiggle');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
